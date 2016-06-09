@@ -89,6 +89,11 @@ GEM
       sshkit (>= 1.6.1, != 1.7.0)
     arel (7.0.0)
     ast (2.2.0)
+    autoprefixer-rails (6.3.6.1)
+      execjs
+    bootstrap-sass (3.3.6)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.2)
     capistrano (3.5.0)
       airbrussh (>= 1.0.0)
@@ -116,6 +121,8 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.7.0)
+    faker (1.6.3)
+      i18n (~> 0.5)
     ffi (1.9.10)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
@@ -247,8 +254,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass (~> 3.3.6)
   capistrano-rails
   coffee-rails (~> 4.1.0)
+  faker
   jbuilder (~> 2.0)
   jquery-rails
   listen (~> 3.0.5)
