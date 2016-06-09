@@ -1,3 +1,31 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.home-container {
+  margin: 0;
+  width: 100%;
+}
+
+.quote-card {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  box-shadow: 1px 1px #cccccc;
+  display: inline !important;
+  margin: 10px;
+  width: 30%;
+  padding: 0;
+
+  .quote-text {
+    min-height: 20em;
+    padding-top: 1em;
+    text-align: center;
+  }
+
+  .quote-category {
+    height: 2.5em;
+    background-color: #f6f6f6;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+  }
+
+  .quote-social {
+    height: 2.5em;
+  }
+}

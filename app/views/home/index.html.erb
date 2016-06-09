@@ -1,2 +1,15 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="container home-container">
+  <div class="row">
+    <div class="col-lg-9">
+      <% @user.quotes.each do |quote| %>
+        <div class="col-lg-4 quote-card">
+          <div class="quote-text"><p><%= quote.body %></p></div>
+          <div class="quote-category"></div>
+          <div class="quote-social"></div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-lg-3">
+    </div>
+  </div>
+</div>
