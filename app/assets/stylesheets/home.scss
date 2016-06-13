@@ -14,7 +14,7 @@
 
   .quote-text {
     min-height: 20em;
-    padding-top: 1em;
+    padding: 1em 0.8em 0;
     text-align: center;
   }
 
@@ -27,5 +27,39 @@
 
   .quote-social {
     height: 2.5em;
+    margin: 0 11.5px;
   }
+}
+
+.fa-edits {
+  font-size: 18px;
+  margin-top: 5.5px;
+}
+
+.fa-facebook {
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+  border-radius: 100%;
+  height: 24px;
+  padding: 0 auto;
+  width: 24px;
+}
+
+.fa-facebook::before {
+  color: #ffffff;
+  margin-top: 2px;
+  padding-left: 5px;
+}
+
+.fa-twitter {
+  background-color: #55acee;
+  border: 1px solid #55acee;
+  border-radius: 100%;
+  height: 24px;
+  width: 24px;
+}
+
+.fa-twitter::before {
+  color: #ffffff;
+  padding-left: 3px;
 }
