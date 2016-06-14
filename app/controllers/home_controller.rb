@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @user = User.first
+    @quotes = Quote.all
   end
 end
