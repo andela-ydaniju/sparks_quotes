@@ -1,4 +1,9 @@
-user = User.create(name: 'Yusuf Daniju', cohort: 12, position: 'Secretary')
-30.times do
-  user.quotes.create(body: Faker::Hipster.paragraph(rand(1..3)))
+require_relative 'seed_helper'
+
+LIST.each_index do |index|
+  USER.quotes.create(
+    title: LIST[index][:title],
+    body: LIST[index][:body],
+    created_by: LIST[index][:created_by]
+  )
 end

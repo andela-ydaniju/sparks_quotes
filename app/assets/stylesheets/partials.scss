@@ -1,0 +1,27 @@
+.header-general {
+  background-color: green;
+}
+
+.nav-member {
+  display: inline-block;
+  vertical-align: center;
+
+  .link {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.link.logo {
+  font-size: 2em;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.link.page {
+  &:hover {
+  
+  }
+}

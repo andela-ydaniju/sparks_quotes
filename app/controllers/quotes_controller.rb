@@ -37,7 +37,7 @@ class QuotesController < ApplicationController
   private
 
   def quote_params
-    params.require(:quote).permit(:body, user_id: user.id)
+    params.require(:quote).permit(:body, :title, :created_by, user_id: user.id)
   end
 
   def user
