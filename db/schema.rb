@@ -11,25 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160623113317) do
-
-  create_table "quotes", force: :cascade do |t|
-    t.text     "body"
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "created_by"
-    t.string   "title"
-    t.index ["user_id"], name: "index_quotes_on_user_id"
+ActiveRecord::Schema.define(version: 20_160_623_113_317) do
+  create_table 'quotes', force: :cascade do |t|
+    t.text     'body'
+    t.integer  'user_id'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.string   'created_by'
+    t.string   'title'
+    t.index ['user_id'], name: 'index_quotes_on_user_id'
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "cohort"
-    t.string   "society"
-    t.string   "position"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table 'users', force: :cascade do |t|
+    t.string   'name'
+    t.integer  'cohort'
+    t.string   'society'
+    t.string   'position'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
   end
-
 end
