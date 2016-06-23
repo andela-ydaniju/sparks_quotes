@@ -1,11 +1,13 @@
 <%= render "partials/header" %>
 <div class="container home-container">
   <div class="row">
-    <div class="col-lg-9">
+    <div class="col-lg-9 grid transitions-enabled centered clearfix masonry">
       <% if @quotes %>
         <% @quotes.each do |quote| %>
           <div class="col-lg-4 quote-card">
+            <div class="quote-title"><p><%= quote.title %></p></div>
             <div class="quote-text"><p><%= quote.body %></p></div>
+            <div class="quote-creator"><p>Author: <%= quote.created_by %></p></div>
             <div class="quote-category"></div>
             <div class="quote-social">
               <i class="fa fa-twitter fa-2x fa-edits tw"></i>
@@ -16,8 +18,6 @@
       <% else %>
         <h3>Create more quotes for nice display</h3>
       <% end %>
-    </div>
-    <div class="col-lg-3">
     </div>
   </div>
 </div>

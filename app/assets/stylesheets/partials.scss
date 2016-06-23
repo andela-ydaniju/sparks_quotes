@@ -13,7 +13,9 @@
 }
 
 .link.logo {
+  font-family: 'Open Sans';
   font-size: 2em;
+  margin: 0 30px;
 
   &:hover {
     text-decoration: none;
@@ -21,6 +23,8 @@
 }
 
 .link.page {
+  margin: 8px;
+
   &:hover {
   
   }

@@ -11,6 +11,7 @@ gem 'turbolinks', '~> 5.x'
 gem 'jbuilder', '~> 2.0'
 gem 'rubocop'
 gem 'font-awesome-rails'
+gem 'masonry-rails'
 
 gem 'capistrano-rails', group: :development
 

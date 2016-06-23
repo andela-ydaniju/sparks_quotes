@@ -1,3 +1,7 @@
+*, html, body {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -6,22 +10,29 @@ h5,
 h6 {
   margin: 0;
 }
+
 .home-container {
+  font-family: Lato;
   margin: 0;
-  width: 100%;
+}
+
+.grid {
+  width: 960px;
+}
+
+.centered {
+  margin: 0 auto;
 }
 
 .quote-card {
   border: 1px solid #dedede;
   border-radius: 5px;
   box-shadow: 1px 1px #cccccc;
-  display: inline !important;
-  margin: 10px;
-  width: 30%;
+  margin: 20px 0 0;
+  width: 290px;
   padding: 0;
 
   .quote-text {
-    min-height: 20em;
     padding: 1em 0.8em 0;
   }
 
